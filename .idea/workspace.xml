@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bedda027-b970-4031-a13f-68f50299e068" name="Default Changelist" comment="" />
+    <list default="true" id="bedda027-b970-4031-a13f-68f50299e068" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Phonebook/Phonebook.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Phonebook/Phonebook.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1VGImpWFfvEs3QFJtUdDPiJcIYK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,6 +24,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -29,8 +39,18 @@
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Денис\AppData\Roaming\npm\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="npm.deploy">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -43,6 +63,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -66,7 +91,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576873166276</updated>
-      <workItem from="1576873168280" duration="3896000" />
+      <workItem from="1576873168280" duration="4280000" />
+      <workItem from="1576928411043" duration="261000" />
     </task>
     <servers />
   </component>
@@ -74,21 +100,21 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1835" height="274" key="GridCell.Tab.0.bottom" timestamp="1576873759112">
+    <state width="1835" height="274" key="GridCell.Tab.0.bottom" timestamp="1576877443484">
       <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1835" height="274" key="GridCell.Tab.0.bottom/0.0.1856.1080@0.0.1856.1080" timestamp="1576873759112" />
-    <state width="1835" height="274" key="GridCell.Tab.0.center" timestamp="1576873759112">
+    <state width="1835" height="274" key="GridCell.Tab.0.bottom/0.0.1856.1080@0.0.1856.1080" timestamp="1576877443484" />
+    <state width="1835" height="274" key="GridCell.Tab.0.center" timestamp="1576877443483">
       <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1835" height="274" key="GridCell.Tab.0.center/0.0.1856.1080@0.0.1856.1080" timestamp="1576873759112" />
-    <state width="1835" height="274" key="GridCell.Tab.0.left" timestamp="1576873759112">
+    <state width="1835" height="274" key="GridCell.Tab.0.center/0.0.1856.1080@0.0.1856.1080" timestamp="1576877443483" />
+    <state width="1835" height="274" key="GridCell.Tab.0.left" timestamp="1576877443483">
       <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1835" height="274" key="GridCell.Tab.0.left/0.0.1856.1080@0.0.1856.1080" timestamp="1576873759112" />
-    <state width="1835" height="274" key="GridCell.Tab.0.right" timestamp="1576873759112">
+    <state width="1835" height="274" key="GridCell.Tab.0.left/0.0.1856.1080@0.0.1856.1080" timestamp="1576877443483" />
+    <state width="1835" height="274" key="GridCell.Tab.0.right" timestamp="1576877443484">
       <screen x="0" y="0" width="1856" height="1080" />
     </state>
-    <state width="1835" height="274" key="GridCell.Tab.0.right/0.0.1856.1080@0.0.1856.1080" timestamp="1576873759112" />
+    <state width="1835" height="274" key="GridCell.Tab.0.right/0.0.1856.1080@0.0.1856.1080" timestamp="1576877443484" />
   </component>
 </project>

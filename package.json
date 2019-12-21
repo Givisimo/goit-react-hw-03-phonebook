@@ -9,7 +9,7 @@
     "react-scripts": "3.2.0",
     "uuid": "^3.3.3"
   },
-  "homepage": "https://givisimo.github.io/goit-react-hw-02-phonebook/",
+  "homepage": "https://givisimo.github.io/goit-react-hw-03-phonebook/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -26,8 +26,11 @@ class Phonebook extends Component {
     this.setState({ contacts: [...contactsFromStorage] });
   }
 
-  componentDidUpdate() {
-    localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+  componentDidUpdate(prevProps, prevState) {
+    const { contacts } = this.state;
+    if (prevState.contacts !== contacts) {
+      localStorage.setItem('contacts', JSON.stringify(contacts));
+    }
   }
 
   handleFilter = e => {
