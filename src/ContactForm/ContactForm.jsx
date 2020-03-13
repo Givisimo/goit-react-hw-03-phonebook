@@ -1,84 +1,70 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import uuid from 'uuid/v1';
 import T from 'prop-types';
 
-class ContactForm extends Component {
-  state = {
-    name: '',
-    number: '',
+const [nameId, numberId] = [uuid(), uuid()];
+
+const ContactForm = ({ onSaveContact }) => {
+  const [name, handleName] = useState('');
+
+  const [number, handleNumber] = useState('');
+
+  const reset = () => {
+    handleName('');
+    handleNumber('');
   };
 
-  inputIds = {
-    nameId: uuid(),
-    numberId: uuid(),
-  };
-
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
-
-  handleClick = () => {
+  const handleClick = () => {
     const newContact = {
       id: uuid(),
-      name: this.state.name,
-      number: this.state.number,
+      name,
+      number,
     };
-    if (!this.state.name || !this.state.number) {
+    if (!name || !number) {
       alert('Name and number is required!');
       return;
     }
     // eslint-disable-next-line
-    if (isNaN(this.state.number)) {
+    if (isNaN(number)) {
       alert('Invalid number');
       return;
     }
-    this.props.onSaveContact({ ...newContact });
+    onSaveContact({ ...newContact });
 
-    this.reset();
+    reset();
   };
 
-  reset = () => {
-    this.setState({
-      name: '',
-      number: '',
-    });
-  };
+  return (
+    <form>
+      <label htmlFor={nameId}>
+        <h2>Name</h2>
+        <input
+          type="text"
+          onChange={event => handleName(event.target.value)}
+          name="name"
+          value={name}
+          id={nameId}
+        />
+      </label>
+      <label htmlFor={numberId}>
+        <h2>Number</h2>
+        <input
+          type="text"
+          onChange={event => handleNumber(event.target.value)}
+          name="number"
+          value={number}
+          id={numberId}
+        />
+      </label>
 
-  render() {
-    const { name, number } = this.state;
-    const { nameId, numberId } = this.inputIds;
-    return (
-      <form>
-        <label htmlFor={nameId}>
-          <h2>Name</h2>
-          <input
-            type="text"
-            onChange={this.handleChange}
-            name="name"
-            value={name}
-            id={nameId}
-          />
-        </label>
-        <label htmlFor={numberId}>
-          <h2>Number</h2>
-          <input
-            type="text"
-            onChange={this.handleChange}
-            name="number"
-            value={number}
-            id={numberId}
-          />
-        </label>
-
-        <p>
-          <button type="button" onClick={this.handleClick}>
-            Add contact
-          </button>
-        </p>
-      </form>
-    );
-  }
-}
+      <p>
+        <button type="button" onClick={handleClick}>
+          Add contact
+        </button>
+      </p>
+    </form>
+  );
+};
 
 ContactForm.propTypes = {
   onSaveContact: T.func.isRequired,
